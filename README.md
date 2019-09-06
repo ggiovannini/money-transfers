@@ -1,5 +1,18 @@
 # Money Transfers
 
+## Used technology
+
+    - Java 11.0.3
+    - Spark (http://sparkjava.com/)
+    - Gson (https://github.com/google/gson)
+    - Guice Injector (https://github.com/google/guice)
+    - SLF4J (https://www.slf4j.org/)
+    
+    - Junit
+    - Rest assured (http://rest-assured.io/)
+    - Mockito (https://site.mockito.org/)
+    
+
 
 ## How to run
 
@@ -7,12 +20,12 @@
 #### Build
 To build the project execute from the root folder:
 
-    gradle build
+    ./gradle build
 
 #### Run
 To run the app execute from the root folder:
 
-    gradle run
+    ./gradle run
 
 or from the jar:
 
@@ -25,7 +38,7 @@ The application will start on the `localhost` and will be listening to the port 
 #### Tests
 To run the tests execute from the root folder:
 
-    gradle test
+    ./gradle test
 
 The functional tests will run the app on the `localhost` and the port `8888`
 
