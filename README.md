@@ -2,15 +2,15 @@
 
 ## Used technology
 
-    - Java 11.0.3
-    - Spark (http://sparkjava.com/)
-    - Gson (https://github.com/google/gson)
-    - Guice Injector (https://github.com/google/guice)
-    - SLF4J (https://www.slf4j.org/)
+- Java 11.0.3
+- Spark (http://sparkjava.com/)
+- Gson (https://github.com/google/gson)
+- Guice Injector (https://github.com/google/guice)
+- SLF4J (https://www.slf4j.org/)
     
-    - Junit
-    - Rest assured (http://rest-assured.io/)
-    - Mockito (https://site.mockito.org/)
+- Junit
+- Rest assured (http://rest-assured.io/)
+- Mockito (https://site.mockito.org/)
     
 
 
