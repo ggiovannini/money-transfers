@@ -31,12 +31,12 @@ The application will start on the `localhost` and will be listening to the port 
 #### Build
 To build the project execute from the root folder:
 
-    ./gradle build
+    ./gradlew build
 
 #### Run
 To run the app execute from the root folder:
 
-    ./gradle run
+    ./gradlew run
 
 
 The application will start on the `localhost` and will be listening to the port `8080`
@@ -45,7 +45,7 @@ The application will start on the `localhost` and will be listening to the port 
 #### Tests
 To run the tests execute from the root folder:
 
-    ./gradle test
+    ./gradlew test
 
 The functional tests will run the app on the `localhost` and the port `8888`
 
