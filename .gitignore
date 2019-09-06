@@ -13,6 +13,7 @@
 # Package Files #
 *.jar
 !money-transfers-1.0.0.jar
+!gradle-wrapper.jar
 *.war
 *.nar
 *.ear
