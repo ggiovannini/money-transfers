@@ -19,6 +19,14 @@
 
 ## How to run
 
+#### Run from the jar
+
+Execute from the root folder:
+
+    java -jar money-transfers-1.0.0.jar
+
+The application will start on the `localhost` and will be listening to the port `8080`
+
 
 #### Build
 To build the project execute from the root folder:
@@ -29,10 +37,6 @@ To build the project execute from the root folder:
 To run the app execute from the root folder:
 
     ./gradle run
-
-or from the jar:
-
-    java -jar money-transfers-1.0.0.jar
 
 
 The application will start on the `localhost` and will be listening to the port `8080`
