@@ -41,14 +41,9 @@ To see the test report open:
 #### Account Structure
     {
         "id": <string>,
-        "balance": <MoneyBalance>
+        "balance": <number>
     }
 
-#### MoneyBalance Structure
-    {
-        "id": <string>,
-        "amount": <number>
-    }
 
 #### Create Account
 
@@ -66,9 +61,7 @@ Response:
     HTTP 201 OK
     {
         "id": "1",
-        "balance": {
-            "amount": 7000.60
-        }
+        "balance": 7000.60
     }
 
 
@@ -85,9 +78,8 @@ Response:
     HTTP 200 OK
     {
         "id": "1",
-        "balance": {
-            "amount": 7000.60
-        }
+        "balance": 7000.60
+
     }
 
 
@@ -104,6 +96,8 @@ Response:
 
 
 #### Create a transference
+
+The following makes a transference between two accounts
 
 Request:
 
@@ -130,7 +124,8 @@ Response:
 
 Example response:
 
+    HTTP 404 NOT FOUND 
     {
-        "status": "500",
-        "message": "Insufficient account money to make the transaction"
+        "status": "404",
+        "message": "Account with id '1234' not found"
     }    
