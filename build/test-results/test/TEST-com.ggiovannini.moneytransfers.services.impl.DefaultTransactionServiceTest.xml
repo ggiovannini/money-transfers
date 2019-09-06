@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggiovannini.moneytransfers.services.impl.DefaultTransactionServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:52" hostname="AR0FVFYR01DHV2J" time="0.008">
+  <properties/>
+  <testcase name="makeTransferenceWithInsufficentAccountMoneyTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultTransactionServiceTest" time="0.001"/>
+  <testcase name="makeTransferenceSuccessfullyTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultTransactionServiceTest" time="0.002"/>
+  <testcase name="makeTransferenceWithTargetAccountNotFoundTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultTransactionServiceTest" time="0.001"/>
+  <testcase name="makeTransferenceWithSourceAccountNotFoundTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultTransactionServiceTest" time="0.001"/>
+  <testcase name="createTransactionTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultTransactionServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

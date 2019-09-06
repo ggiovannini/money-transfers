@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="functional.SimpleMoneyTransferTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:51" hostname="AR0FVFYR01DHV2J" time="0.159">
+  <properties/>
+  <testcase name="invalidBodyParametersTest" classname="functional.SimpleMoneyTransferTest" time="0.033"/>
+  <testcase name="insufficientAccountMoneyTest" classname="functional.SimpleMoneyTransferTest" time="0.021"/>
+  <testcase name="successfullMoneyTransferTest" classname="functional.SimpleMoneyTransferTest" time="0.048"/>
+  <testcase name="accountNotFoundTest" classname="functional.SimpleMoneyTransferTest" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Thread-85] WARN org.eclipse.jetty.server.AbstractConnector - Ignoring deprecated socket close linger time
+[Thread-85] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+[Thread-85] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:8888
+[Thread-85] INFO org.eclipse.jetty.server.Server - jetty-9.4.12.v20180830; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 11.0.3+12-b304.10
+[Thread-85] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Thread-85] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Thread-85] INFO org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+[Thread-85] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70333c93{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+[Thread-85] INFO org.eclipse.jetty.server.Server - Started @9536ms
+[qtp1148892955-141] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {"transaction_amount":"0","source_account":"3","target_account":"4"}
+[qtp1148892955-141] INFO  - RESPONSE: 400 {"status":"400","message":"Invalid request body parameter"}
+[qtp1148892955-136] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {"transaction_amount":"8000","source_account":"1","target_account":"2"}
+[qtp1148892955-136] ERROR  - RESPONSE: 500 {"status":"500","message":"Insufficient account money to make the transaction"}
+[qtp1148892955-137] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {"transaction_amount":"2000","source_account":"1","target_account":"2"}
+[qtp1148892955-137] INFO  - RESPONSE: 200 {"id":"202","source_account":"1","target_account":"2","status":"DONE","transaction_amount":2000}
+[qtp1148892955-140] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {"transaction_amount":"2000","source_account":"12","target_account":"2"}
+[qtp1148892955-140] INFO  - RESPONSE: 404 {"status":"404","message":"Account with id \u002712\u0027 not found"}
+[Thread-94] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >>> Spark shutting down ...
+[Thread-94] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@70333c93{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+[Thread-94] INFO org.eclipse.jetty.server.session - node0 Stopped scavenging
+[Thread-94] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - done
+]]></system-err>
+</testsuite>

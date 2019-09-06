@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggiovannini.moneytransfers.controllers.TransactionControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:52" hostname="AR0FVFYR01DHV2J" time="0.186">
+  <properties/>
+  <testcase name="moneyTransferInvalidRequestParametersTest" classname="com.ggiovannini.moneytransfers.controllers.TransactionControllerTest" time="0.16"/>
+  <testcase name="moneyTransferCanceledTest" classname="com.ggiovannini.moneytransfers.controllers.TransactionControllerTest" time="0.017"/>
+  <testcase name="moneyTransferWithApiExceptionInTransactionServiceTest" classname="com.ggiovannini.moneytransfers.controllers.TransactionControllerTest" time="0.003"/>
+  <testcase name="moneyTransferSuccessfullyTest" classname="com.ggiovannini.moneytransfers.controllers.TransactionControllerTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

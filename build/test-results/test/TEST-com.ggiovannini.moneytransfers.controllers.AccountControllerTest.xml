@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:52" hostname="AR0FVFYR01DHV2J" time="0.02">
+  <properties/>
+  <testcase name="getAccountNotFoundTest" classname="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" time="0.001"/>
+  <testcase name="createAccountWithInvalidParameterTest" classname="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" time="0.001"/>
+  <testcase name="createAccountWithErrorTest" classname="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" time="0.001"/>
+  <testcase name="getAccountWithNullIdTest" classname="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" time="0.001"/>
+  <testcase name="getAccountSuccessfullyTest" classname="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" time="0.013"/>
+  <testcase name="createAccountSuccessfulyTest" classname="com.ggiovannini.moneytransfers.controllers.AccountControllerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

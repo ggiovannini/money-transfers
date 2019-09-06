@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:52" hostname="AR0FVFYR01DHV2J" time="0.12">
+  <properties/>
+  <testcase name="withdrawMoneySuccessfullyTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.0"/>
+  <testcase name="depositMoneySuccessfullyTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.0"/>
+  <testcase name="searchAccountTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.0"/>
+  <testcase name="createAccountTestTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.104"/>
+  <testcase name="withdrawMoneyShouldThrowExceptionTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.0"/>
+  <testcase name="concurrentWithdrawMoneySuccessfullyTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.011"/>
+  <testcase name="concurrentDepositMoneySuccessfullyTest" classname="com.ggiovannini.moneytransfers.services.impl.DefaultAccountServiceTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

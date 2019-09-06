@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class functional.SimpleMoneyTransferTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class functional.SimpleMoneyTransferTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/functional.html">functional</a> &gt; SimpleMoneyTransferTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.159s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">accountNotFoundTest</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">insufficientAccountMoneyTest</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">invalidBodyParametersTest</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">successfullMoneyTransferTest</td>
+<td class="success">0.048s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Thread-85] WARN org.eclipse.jetty.server.AbstractConnector - Ignoring deprecated socket close linger time
+[Thread-85] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+[Thread-85] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - &gt;&gt; Listening on 0.0.0.0:8888
+[Thread-85] INFO org.eclipse.jetty.server.Server - jetty-9.4.12.v20180830; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 11.0.3+12-b304.10
+[Thread-85] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Thread-85] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Thread-85] INFO org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+[Thread-85] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70333c93{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+[Thread-85] INFO org.eclipse.jetty.server.Server - Started @9536ms
+[qtp1148892955-141] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {&quot;transaction_amount&quot;:&quot;0&quot;,&quot;source_account&quot;:&quot;3&quot;,&quot;target_account&quot;:&quot;4&quot;}
+[qtp1148892955-141] INFO  - RESPONSE: 400 {&quot;status&quot;:&quot;400&quot;,&quot;message&quot;:&quot;Invalid request body parameter&quot;}
+[qtp1148892955-136] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {&quot;transaction_amount&quot;:&quot;8000&quot;,&quot;source_account&quot;:&quot;1&quot;,&quot;target_account&quot;:&quot;2&quot;}
+[qtp1148892955-136] ERROR  - RESPONSE: 500 {&quot;status&quot;:&quot;500&quot;,&quot;message&quot;:&quot;Insufficient account money to make the transaction&quot;}
+[qtp1148892955-137] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {&quot;transaction_amount&quot;:&quot;2000&quot;,&quot;source_account&quot;:&quot;1&quot;,&quot;target_account&quot;:&quot;2&quot;}
+[qtp1148892955-137] INFO  - RESPONSE: 200 {&quot;id&quot;:&quot;202&quot;,&quot;source_account&quot;:&quot;1&quot;,&quot;target_account&quot;:&quot;2&quot;,&quot;status&quot;:&quot;DONE&quot;,&quot;transaction_amount&quot;:2000}
+[qtp1148892955-140] INFO  - REQUEST: POST http://localhost:8888/api/1.0/transaction/transfer {&quot;transaction_amount&quot;:&quot;2000&quot;,&quot;source_account&quot;:&quot;12&quot;,&quot;target_account&quot;:&quot;2&quot;}
+[qtp1148892955-140] INFO  - RESPONSE: 404 {&quot;status&quot;:&quot;404&quot;,&quot;message&quot;:&quot;Account with id \u002712\u0027 not found&quot;}
+[Thread-94] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - &gt;&gt;&gt; Spark shutting down ...
+[Thread-94] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@70333c93{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+[Thread-94] INFO org.eclipse.jetty.server.session - node0 Stopped scavenging
+[Thread-94] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - done
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Sep 6, 2019, 12:55:52 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggiovannini.moneytransfers.validators.CreateAccountValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:51" hostname="AR0FVFYR01DHV2J" time="0.0">
+  <properties/>
+  <testcase name="isValidWithWrongAmountTest" classname="com.ggiovannini.moneytransfers.validators.CreateAccountValidatorTest" time="0.0"/>
+  <testcase name="isValidTest" classname="com.ggiovannini.moneytransfers.validators.CreateAccountValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

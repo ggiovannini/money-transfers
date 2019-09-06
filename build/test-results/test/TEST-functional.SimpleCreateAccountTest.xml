@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="functional.SimpleCreateAccountTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-06T03:55:43" hostname="AR0FVFYR01DHV2J" time="1.692">
+  <properties/>
+  <testcase name="invalidParametersTest" classname="functional.SimpleCreateAccountTest" time="1.65"/>
+  <testcase name="createAccountSuccessfullyTest" classname="functional.SimpleCreateAccountTest" time="0.039"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Thread-3] INFO org.eclipse.jetty.util.log - Logging initialized @1025ms to org.eclipse.jetty.util.log.Slf4jLog
+[Thread-3] WARN org.eclipse.jetty.server.AbstractConnector - Ignoring deprecated socket close linger time
+[Thread-3] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+[Thread-3] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:8888
+[Thread-3] INFO org.eclipse.jetty.server.Server - jetty-9.4.12.v20180830; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 11.0.3+12-b304.10
+[Thread-3] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Thread-3] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Thread-3] INFO org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+[Thread-3] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6ece29a3{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+[Thread-3] INFO org.eclipse.jetty.server.Server - Started @1183ms
+[qtp1002150042-21] INFO  - REQUEST: POST http://localhost:8888/api/1.0/account {"wrong_param":"w"}
+[qtp1002150042-21] INFO  - RESPONSE: 400 {"status":"400","message":"Invalid request body parameter"}
+[qtp1002150042-16] INFO  - REQUEST: POST http://localhost:8888/api/1.0/account {"balance":"70000"}
+[qtp1002150042-16] INFO  - RESPONSE: 201 {"id":"1","balance":70000}
+[Thread-12] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >>> Spark shutting down ...
+[Thread-12] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@6ece29a3{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+[Thread-12] INFO org.eclipse.jetty.server.session - node0 Stopped scavenging
+[Thread-12] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - done
+]]></system-err>
+</testsuite>
