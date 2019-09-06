@@ -2,12 +2,15 @@
 
 ## Used technology
 
+#### General:
+
 - Java 11.0.3
 - Spark (http://sparkjava.com/)
 - Gson (https://github.com/google/gson)
 - Guice Injector (https://github.com/google/guice)
 - SLF4J (https://www.slf4j.org/)
-    
+  
+  #### For test:  
 - Junit
 - Rest assured (http://rest-assured.io/)
 - Mockito (https://site.mockito.org/)
